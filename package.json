@@ -1,0 +1,28 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend finder dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edriver4/Friend-Finder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder"
+  ],
+  "author": "Bradley Driver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edriver4/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/edriver4/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
