@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Friend Finder</title>
+</head>
+    <style type="text/css">
+        .survey-header { background-color: white}
+
+        .question {
+            margin-top: 15px;
+            color: blue;
+            font-weight: bolder;
+        }
+        h4 {margin-top: 10px;}
+    </style>
+<body>
+    <div class="survey-header">
+        <h1 class="pt-3"><i class="fas fa-user-friends"></i> Friend Finder Survey</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <h4 class="form-header"><i class="fas fa-info"></i> About you</h4>
+                <label for="name-input" class="question">What is your name?</label>
+                <input type="text" class="form-control" placeholder="Enter first and last name" id="name-input">
+                <label for="picture-url-input" class="question">Enter a link to your picture</label>
+                <input type="text" class="form-control" placeholder="Enter picture URL" id="picture-url-input">
+                <hr>
+                <h4><i class="far fa-question-circle"></i> How well do you agree with the following statements?</h4>
+                <p class="question">1. I see myself as extraverted, enthusiastic.</p>
+                <select class="form-control" id="questionNum1">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">2. I see myself as critical, quarrelsome.</p>
+                <select class="form-control" id="questionNum2">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">3. I see myself as dependable, self-disciplined.</p>
+                <select class="form-control" id="questionNum3">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">4. I see myself as anxious, easily upset.</p>
+                <select class="form-control" id="questionNum4">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">5. I see myself as open to new experiences, complex.</p>
+                <select class="form-control" id="questionNum5">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">6. I see myself as reserved, quiet.</p>
+                <select class="form-control" id="questionNum6">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">7. I see myself as sympathetic, warm.</p>
+                <select class="form-control" id="questionNum7">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">8. I see myself as disorganized, careless.</p>
+                <select class="form-control" id="questionNum8">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">9. I see myself as calm, emotionally stable.</p>
+                <select class="form-control" id="questionNum9">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+                <p class="question">10. I see myself as conventional, uncreative.</p>
+                <select class="form-control" id="questionNum10">
+                    <option selected disabled>Select an option</option>
+                    <option>1 - Strongly disagree</option>
+                    <option>2 - Somewhat disagree</option>
+                    <option>3 - Neither agree or disagree</option>
+                    <option>4 - Somewhat agree</option>
+                    <option>5 - Strongly agree</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-outline-dark shadow my-2" id="submit-btn">Submit</button>
+        </form>
+        <hr>
+        <div class="row survey-footer">
+            <p class="pl-3 mb-4">
+                <a href="/api/friends" target="_blank">API Friends List</a> | <a href="" target="_blank">Github Repo</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $('#submit-btn').on('click', event => {
+        event.preventDefault();
+        const person = {
+            name: $('#name-input').val().trim(),
+            photo: $('#picture-url-input').val().trim(),
+            scores: [
+                        $('#questionNum1').val(),
+                        $('#questionNum2').val(),
+                        $('#questionNum3').val(),
+                        $('#questionNum4').val(),
+                        $('#questionNum5').val(),
+                        $('#questionNum6').val(),
+                        $('#questionNum7').val(),
+                        $('#questionNum8').val(),
+                        $('#questionNum9').val(),
+                        $('#questionNum10').val(),
+                    ]
+        }
+        console.log(person);
+        $.post('/api/friends', person, (data) => {
+            console.log(data);
+            console.log(`${person.name}'s info has been added to the database`);
+        });
+        // clear form
+        $('#name-input').val('');
+        $('#picture-url-input').val('');
+        $('#questionNum1').val('');
+        $('#questionNum2').val('');
+        $('#questionNum3').val('');
+        $('#questionNum4').val('');
+        $('#questionNum5').val('');
+        $('#questionNum6').val('');
+        $('#questionNum7').val('');
+        $('#questionNum8').val('');
+        $('#questionNum9').val('');
+        $('#questionNum10').val('');
+    });
+</script>
