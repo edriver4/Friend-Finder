@@ -1,5 +1,5 @@
 // path is a dependency
-const path = requier('path');
+const path = require('path');
 
 // routing
 module.exports = app => {
