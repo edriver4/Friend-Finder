@@ -1,6 +1,3 @@
-// Path is a dependency 
-const path = require('path');
-
 // load the data
 const peopleData = require('../data/friends');
 

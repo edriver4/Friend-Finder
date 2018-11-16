@@ -4,14 +4,14 @@ const express = require('express');
 // configuration for express server
 const app = express();
 
-const PORT = process.env.port || 8080;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // router configuration
-require("./app/routes/apiRoutes")(app);
-require("./app/routes/htmlRoutes")(app);
+ require("./app/routes/apiRoutes")(app);
+ require("./app/routes/htmlRoutes")(app);
 
 // listener - starts server
 app.listen(PORT, () => {
