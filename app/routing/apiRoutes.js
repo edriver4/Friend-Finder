@@ -48,7 +48,7 @@ module.exports = app => {
         });
         // respond with friendMatches to be displayed in modal
         console.log(friendMatch);
-        res.json(match);
+        res.json(friendMatch);
 
         // add a new survey entry to the dataset
         peopleData.push(rawData);
