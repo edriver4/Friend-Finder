@@ -15,16 +15,22 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <title>Friend Finder</title>
 </head>
-    <style type="text/css">
-        .survey-header { background-color: white}
+<style type="text/css">
+    .survey-header {
+        background-color: white
+    }
 
-        .question {
-            margin-top: 15px;
-            color: blue;
-            font-weight: bolder;
-        }
-        h4 {margin-top: 10px;}
-    </style>
+    .question {
+        margin-top: 15px;
+        color: blue;
+        font-weight: bolder;
+    }
+
+    h4 {
+        margin-top: 10px;
+    }
+</style>
+
 <body>
     <div class="survey-header">
         <h1 class="pt-3"><i class="fas fa-user-friends"></i> Friend Finder Survey</h1>
@@ -40,7 +46,7 @@
                 <input type="text" class="form-control" placeholder="Enter picture URL" id="picture-url-input">
                 <hr>
                 <h4><i class="far fa-question-circle"></i> How well do you agree with the following statements?</h4>
-                <p class="question">1. I see myself as extraverted, enthusiastic.</p>
+                <p class="question">1. Your mind is always buzzing with unexplored ideas and plans.</p>
                 <select class="form-control" id="questionNum1">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -49,7 +55,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">2. I see myself as critical, quarrelsome.</p>
+                <p class="question">2. Generally speaking, you rely more on your experinece than your imagination.</p>
                 <select class="form-control" id="questionNum2">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -58,7 +64,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">3. I see myself as dependable, self-disciplined.</p>
+                <p class="question">3. You find it easy to stay relaxed and focused even when there is some pressure.</p>
                 <select class="form-control" id="questionNum3">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -67,7 +73,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">4. I see myself as anxious, easily upset.</p>
+                <p class="question">4. You rarely do something just out of sheer curiosity.</p>
                 <select class="form-control" id="questionNum4">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -76,7 +82,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">5. I see myself as open to new experiences, complex.</p>
+                <p class="question">5. People can rarely upset you.</p>
                 <select class="form-control" id="questionNum5">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -85,7 +91,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">6. I see myself as reserved, quiet.</p>
+                <p class="question">6. It is often difficult for you to relate to other people’s feelings.</p>
                 <select class="form-control" id="questionNum6">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -94,7 +100,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">7. I see myself as sympathetic, warm.</p>
+                <p class="question">7. In a discussion, truth should be more important than people’s sensitivities.</p>
                 <select class="form-control" id="questionNum7">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -103,7 +109,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">8. I see myself as disorganized, careless.</p>
+                <p class="question">8. You rarely get carried away by fantasies and ideas.</p>
                 <select class="form-control" id="questionNum8">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -112,7 +118,9 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">9. I see myself as calm, emotionally stable.</p>
+                <p class="question">9. You think that everyone’s views should be respected regardless of whether they
+                    are supported by facts or not.
+                </p>
                 <select class="form-control" id="questionNum9">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -121,7 +129,7 @@
                     <option>4 - Somewhat agree</option>
                     <option>5 - Strongly agree</option>
                 </select>
-                <p class="question">10. I see myself as conventional, uncreative.</p>
+                <p class="question">10. You feel more energetic after spending time with a group of people.</p>
                 <select class="form-control" id="questionNum10">
                     <option selected disabled>Select an option</option>
                     <option>1 - Strongly disagree</option>
@@ -156,17 +164,17 @@
             name: $('#name-input').val().trim(),
             photo: $('#picture-url-input').val().trim(),
             scores: [
-                        $('#questionNum1').val(),
-                        $('#questionNum2').val(),
-                        $('#questionNum3').val(),
-                        $('#questionNum4').val(),
-                        $('#questionNum5').val(),
-                        $('#questionNum6').val(),
-                        $('#questionNum7').val(),
-                        $('#questionNum8').val(),
-                        $('#questionNum9').val(),
-                        $('#questionNum10').val(),
-                    ]
+                $('#questionNum1').val(),
+                $('#questionNum2').val(),
+                $('#questionNum3').val(),
+                $('#questionNum4').val(),
+                $('#questionNum5').val(),
+                $('#questionNum6').val(),
+                $('#questionNum7').val(),
+                $('#questionNum8').val(),
+                $('#questionNum9').val(),
+                $('#questionNum10').val(),
+            ]
         }
         console.log(person);
         $.post('/api/friends', person, (data) => {
